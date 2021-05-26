@@ -1,9 +1,13 @@
 # game.py
 
 import random
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-#print("Rock, Paper, Scissors, Shoot!")
-print("Welcome Player One!")
+
+user_name = os.environ["PLAYER_NAME"]
+print("Welcome ", user_name)
 
 user_choice = input("Please choose one of'rock','paper','scissors':")
 print("User choice: ", user_choice)
@@ -32,14 +36,6 @@ if user_choice=="scissors" and computer_choice=="paper":
     print("The User wins")
 if computer_choice=="scissors" and user_choice=="paper":
     print("The Computer wins")
-
-
-#
-# A friendly welcome message, including the player's name (by default, use "Player One").
-# The user's selected option
-# The computer's selected option
-# Whether the user or the computer was the winner
-# A friendly farewell message
 
 
 print("This is the end of our game, please play again.")
