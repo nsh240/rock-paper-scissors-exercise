@@ -7,7 +7,10 @@ load_dotenv()
 
 
 user_name = os.environ["PLAYER_NAME"]
-print("Welcome ", user_name)
+# print("Welcome ", user_name)
+
+#refactored with concatenation:
+print("Welcome "+ user_name)
 
 user_choice = input("Please choose one of'rock','paper','scissors':")
 print("User choice: ", user_choice)
