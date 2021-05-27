@@ -24,17 +24,17 @@ print("Computer choice: ", computer_choice)
 
 if user_choice==computer_choice:
     print("tie")
-if user_choice=="rock" and computer_choice=="scissors":
+elif user_choice=="rock" and computer_choice=="scissors":
     print("The User wins")
-if computer_choice=="rock" and user_choice=="scissors":
+elif computer_choice=="rock" and user_choice=="scissors":
     print("The Computer wins")
-if user_choice=="paper" and computer_choice=="rock":
+elif user_choice=="paper" and computer_choice=="rock":
     print("The User wins")
-if computer_choice=="paper" and user_choice=="rock":
+elif computer_choice=="paper" and user_choice=="rock":
     print("The Computer wins")
-if user_choice=="scissors" and computer_choice=="paper":
+elif user_choice=="scissors" and computer_choice=="paper":
     print("The User wins")
-if computer_choice=="scissors" and user_choice=="paper":
+elif computer_choice=="scissors" and user_choice=="paper":
     print("The Computer wins")
 
 
