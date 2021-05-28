@@ -43,7 +43,7 @@ if user_choice=="paper":
 if user_choice=="scissors":
     if computer_choice=="rock":
         print("The Computer Wins")
-    if computer_choice=="paper":
+    elif computer_choice=="paper":
         print("The User Wins")
 
 print("This is the end of our game, please play again.")
